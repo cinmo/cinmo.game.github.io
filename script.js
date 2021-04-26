@@ -48,7 +48,7 @@ function draw(){
 
 function player(){
   this.x = posx
-  this.y = posy-30
+  this.y = posy-h*0.03627569528
 
   this.show = function(){
     var c = "white"
@@ -59,16 +59,16 @@ function player(){
   }
 
   this.update = function(){
-    if((keyIsDown(38)) && (this.y > h/6.5 + 12)){
+    if((keyIsDown(38)) && (this.y > h/6.5 + h*0.01451027811)){
       this.y = this.y -= 1.5
     }
-    if((keyIsDown(40)) && (this.y < h/6.5 + 540)){
+    if((keyIsDown(40)) && (this.y < h/6.5 + h*0.65296251511)){
       this.y = this.y += 1.5
     }
-    if((keyIsDown(39)) && (this.x < w/6.5+1141)){
+    if((keyIsDown(39)) && (this.x < w/6.5+w*0.713125)){
       this.x = this.x += 1.5
     }
-    if((keyIsDown(37)) && (this.x > w/6.5+14)){
+    if((keyIsDown(37)) && (this.x > w/6.5+w*0.00875)){
       this.x = this.x -= 1.5
     }
   }
