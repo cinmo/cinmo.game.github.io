@@ -1,3 +1,6 @@
+function ins(){
+  window.alert("Instructions: \n Use the up, down, left, and right arrows to move around. There are various hidden walls that may get in your way, but don't let that stop you! In this current level, there are four entrances you must reach in total! Good luck~")
+}
 var w = window.innerWidth;
 var h = window.innerHeight;
 var posx = w/2;
@@ -84,13 +87,13 @@ function entrance(){
     if((hit === true) && ( x < 3)){
       console.log("true")
       x = x += 1
-      window.alert("Found one! Onto the next.")
+      window.alert("Found one! Onto the next one!")
     }
 
     hit2 = collideLineCircle(choose[3].x1, choose[3].y1, choose[3].x2, choose[3].y2, player.x, player.y, 20)
     if(hit2 === true){
       console.log("pass")
-      window.alert("Game: Level Demo Finished. Thank you for playing, more is being develop!")
+      window.alert("Game: Level Demo Finished. Thank you for playing!")
       noLoop()
     }
   }
