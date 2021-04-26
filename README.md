@@ -1,1 +1,1 @@
-# cinmo.game.github.io
+# cinmo.github.io/game
