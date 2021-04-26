@@ -37,7 +37,7 @@ function draw(){
   clear() 
   fill(22, 26, 71)
   stroke(color('grey'))
-  rect(w/6.5, h/6.5, 1155, 555)
+  rect(w/6.5, h/6.5, w*0.721875, 0.67110036275*h)
   player.show()
   player.update()
   entrance.show()
