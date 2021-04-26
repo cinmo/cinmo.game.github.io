@@ -3,12 +3,15 @@ body{
     padding:0;
     background-color:black;
     background-repeat: no-repeat;
-    overflow-x: scroll;
-    overflow-y: hidden;
+    z-index: 1;
   }
 
 p{
   position:absolute;
   z-index:1;
   color:white;
+}
+
+#place{
+  right:35%;
 }
